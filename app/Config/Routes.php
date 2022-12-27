@@ -39,7 +39,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/notifications', 'Home::notifications');
 $routes->get('/profile', 'Home::profile');
 $routes->get('/sign_in', 'Home::sign_in');
-$routes->get('/sign_un', 'Home::sign_un');
+$routes->get('/sign_up', 'Home::sign_up');
 $routes->get('/tables', 'Home::tables');
 
 /*

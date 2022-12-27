@@ -20,9 +20,9 @@ class Home extends BaseController
     {
         return view('pages/sign_in');
     }
-    public function sign_un()
+    public function sign_up()
     {
-        return view('pages/sign_un');
+        return view('pages/sign_up');
     }
     public function tables()
     {
