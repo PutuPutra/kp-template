@@ -204,6 +204,13 @@ h6,
     }
 }
 
+.page-header-about {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background: url(../img/header-1.jpg) top left no-repeat;
+    background-size: cover;
+}
+
 .page-header {
     padding-top: 12rem;
     padding-bottom: 6rem;

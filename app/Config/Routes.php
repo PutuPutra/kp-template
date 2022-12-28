@@ -36,6 +36,12 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Umum::index');
+$routes->get('/kontak', 'Umum::kontak');
+$routes->get('/tentang', 'Umum::tentang');
+$routes->get('/service', 'Admin::service');
+
+
+//admin
 $routes->get('/dashboard', 'Admin::dashboard');
 $routes->get('/notifications', 'Admin::notifications');
 $routes->get('/profile', 'Admin::profile');
