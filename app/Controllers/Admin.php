@@ -32,4 +32,8 @@ class Admin extends BaseController
     {
         return view('admin/tables');
     }
+    public function login()
+    {
+        return view('formLogin/login');
+    }
 }

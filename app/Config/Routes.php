@@ -39,6 +39,7 @@ $routes->get('/', 'Umum::index');
 $routes->get('/kontak', 'Umum::kontak');
 $routes->get('/tentang', 'Umum::tentang');
 $routes->get('/service', 'Admin::service');
+$routes->get('/login', 'Admin::login');
 
 
 //admin

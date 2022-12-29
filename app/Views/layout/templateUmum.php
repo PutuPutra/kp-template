@@ -14,10 +14,10 @@
     <link href="/assets/abc/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="/assets/abc/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/abc/css/bootstrapABC.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="/assets/abc/css/style.css" rel="stylesheet">
+    <link href="/assets/abc/css/styleABC.css" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/img/smalan.png">
@@ -38,10 +38,10 @@
     <link href="/assets/CSS_umum/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="/assets/CSS_umum/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/CSS_umum/css/bootstrapUmum.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="/assets/CSS_umum/css/style.css" rel="stylesheet">
+    <link href="/assets/CSS_umum/css/styleUmum.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,44 +54,52 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-8 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>Jl. Panglima Polim No.18, Segala Mider,
+                    Kec. Tanjung Karang Barat, Kota Bandar Lampung, Lampung 35152</small>
+            </div>
+            <div class="col-lg-4 px-5 text-end">
+                <!-- <small><i class="fa fa-calendar text-primary me-2"></i>Senin - Jumat</small> -->
+                <!-- <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>07.00 - 15.45 WIB</small> -->
 
+            </div>
+        </div>
 
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="display-5 text-primary m-0">Finanza</h1>
+                <h1 class="display-5 text-primary m-0">E-SARPRAS</h1>
             </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                fdprocessedid="suwntl" aria-expanded="true">
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                </div>
-                <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-facebook-f text-primary"></small>
-                    </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-twitter text-primary"></small>
-                    </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-linkedin-in text-primary"></small>
-                    </a>
+                    <a href="<?= base_url('/') ?>" class="nav-item nav-link <?= $navbar1 ?>">Beranda</a>
+                    <a href="<?= base_url('kontak') ?>" class="nav-item nav-link <?= $navbar2 ?>">Kontak</a>
+                    <a href="<?= base_url('login') ?>" class="nav-item nav-link">Login</a>
+                    <!-- <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <a href="project.html" class="dropdown-item">Projects</a>
+                            <a href="feature.html" class="dropdown-item">Features</a>
+                            <a href="team.html" class="dropdown-item">Team Member</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="404.html" class="dropdown-item">404 Page</a>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </nav>
     </div>
     <!-- Navbar End -->
-
-
     <?= $this->renderSection('umum'); ?>
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-4">Tentang Kami</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl. Panglima Polim No.18, Segala Mider,
                         Tanjung Karang Barat, Bandar Lampung, Lampung 35152</p>
@@ -109,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-5 col-md-6 px-lg-5">
+                <div class="col-lg-4 col-md-6 px-lg-5">
                     <!-- <h4 class="text-white mb-4">Newsletter</h4>
                     <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                     <div class="position-relative w-100">
@@ -119,7 +127,46 @@
                             class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div> -->
                     <a href="https://smalan.sch.id/"><img class="logo" src="./assets/img/smalan.png" alt=""
-                            style="width:150px"></a>
+                            style="width:180px;margin-left:100px"></a>
+                </div>
+                <div class="col-lg-4 col-md-6 px-lg-5">
+                    <!-- <small class="ms-4">
+                        <p class="">Tanggal/Waktu: <span id="tanggalwaktu"></span></p>
+                    </small>
+                    <script>
+                    var dt = new Date();
+                    document.getElementById("tanggalwaktu").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" +
+                        (dt
+                            .getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt.getHours())
+                        .slice(-
+                            2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + ":" + (("0" + dt.getSeconds()).slice(-
+                        2));
+                    </script> -->
+
+                    <h1 style="color:white">
+                        <script type="text/javascript">
+                        window.onload = function() {
+                            jam();
+                        }
+
+                        function jam() {
+                            var a = document.getElementById('jam'),
+                                d = new Date(),
+                                h, m, s;
+                            h = d.getHours();
+                            m = set(d.getHours());
+                            s = set(d.getSeconds());
+
+                            a.innerHTML = h + ":" + m + ":" + s;
+                            setTimeout('jam()', 1000);
+                        }
+
+                        function set(a) {
+                            a = a < 10 ? '0' + a : a;
+                            return a;
+                        }
+                        </script> ssss
+                    </h1>
                 </div>
             </div>
         </div>
@@ -139,9 +186,10 @@
                     </a> , SMAN 9 Bandarlampung
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Dikembangkan oleh <a class="border-bottom" href="<?= base_url('tentang') ?>">Non Est Ulla</a>
-                    <!-- oleh <a href="https://themewagon.com">Non Est Ulla</a> -->
+                    ~
+                    Dikembangkan oleh <a class="border-bottom" href="<?= base_url('tentang') ?>">Non Est Ulla
+                        Team</a>
+
                 </div>
             </div>
         </div>
@@ -166,18 +214,10 @@
     <!-- Template Javascript -->
     <script src="/assets/CSS_umum/js/main.js"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/abc/lib/wow/wow.min.js"></script>
-    <script src="/assets/abc/lib/easing/easing.min.js"></script>
-    <script src="/assets/abc/lib/waypoints/waypoints.min.js"></script>
-    <script src="/assets/abc/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="/assets/abc/lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="/assets/abc/lib/lightbox/js/lightbox.min.js"></script>
+
 
     <!-- Template Javascript -->
-    <script src="/assets/abc/js/main.js"></script>
+    <script src="/assets/abc/js/mainABC.js"></script>
 </body>
 
 </html>
