@@ -161,7 +161,7 @@
                     </a> , SMAN 9 Bandarlampung
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    ~
+
                     Dikembangkan oleh <a class="border-bottom" href="<?= base_url('tentang') ?>">Non Est Ulla
                         Team</a>
 

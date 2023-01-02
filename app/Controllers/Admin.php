@@ -4,40 +4,24 @@ namespace App\Controllers;
 
 class Admin extends BaseController
 {
-    public function service()
-    {
-        return view('service');
-    }
-    public function notifications()
-    {
-        return view('admin/notifications');
-    }
     public function account()
     {
-        return view('admin/account');
+        $data = [
+            'sidebar1' => null,
+            'sidebar2' => null,
+        ];
+
+        return view('admin/account', $data);
     }
     public function settings()
     {
-        return view('admin/settings');
+        $data = [
+            'sidebar1' => null,
+            'sidebar2' => null,
+        ];
+        return view('admin/settings', $data);
     }
 
-    public function sign_up()
-    {
-        return view('admin/sign_up');
-    }
-    public function dashboard()
-    {
-        return view('admin/dashboard');
-    }
-    public function tables()
-    {
-        $data = [
-            'bg1' => null,
-            'bg2' => 'active bg-gradient-primary',
-            'namePages' => 'Tables',
-        ];
-        return view('admin/tables', $data);
-    }
     public function login()
     {
         return view('formLogin/authLogin');
@@ -50,8 +34,40 @@ class Admin extends BaseController
     {
         return view('formLogin/authforgotpassword');
     }
-    public function input()
+    public function dashboard()
     {
-        return view('admin/input');
+        $data = [
+            'sidebar1' => 'active',
+            'sidebar2' => null,
+            'sidebar3' => null,
+        ];
+        return view('admin/dashboard', $data);
+    }
+    public function data()
+    {
+        $data = [
+            'sidebar1' => null,
+            'sidebar2' => 'active',
+            'sidebar3' => null,
+        ];
+        return view('admin/data', $data);
+    }
+    public function sarana()
+    {
+        $data = [
+            'sidebar1' => null,
+            'sidebar2' => 'active',
+            'sidebar3' => null,
+        ];
+        return view('admin/sarana', $data);
+    }
+    public function prasarana()
+    {
+        $data = [
+            'sidebar1' => null,
+            'sidebar2' => null,
+            'sidebar3' => 'active',
+        ];
+        return view('admin/prasarana', $data);
     }
 }

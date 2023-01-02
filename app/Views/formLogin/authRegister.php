@@ -68,8 +68,9 @@
                     </form>
 
                     <div class="text-center mt-5 text-lg fs-4">
-                        <p class='text-gray-600'><?= lang('Auth.alreadyRegistered') ?> <a href="auth-login.html"
-                                class="font-bold"><?= lang('Auth.signIn') ?></a>.</p>
+                        <p class='text-gray-600'><?= lang('Auth.alreadyRegistered') ?> <a
+                                href="<?= base_url('login') ?>" class="font-bold"><?= lang('Auth.signIn') ?></a>.
+                        </p>
                     </div>
                 </div>
             </div>

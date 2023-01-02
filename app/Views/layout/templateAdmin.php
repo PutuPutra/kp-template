@@ -66,16 +66,22 @@
                     <ul class="menu">
                         <li class="sidebar-title">Menu</li>
 
-                        <li class="sidebar-item active ">
+                        <li class="sidebar-item <?= $sidebar1; ?>">
                             <a href="dashboard" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
-                        <li class="sidebar-item ">
-                            <a href="input" class='sidebar-link'>
-                                <i class="fa-solid fa-plus"></i>
-                                <span>Input</span>
+                        <li class="sidebar-item <?= $sidebar2; ?>">
+                            <a href="sarana" class='sidebar-link'>
+                                <i class="fa-solid fa-laptop"></i>
+                                <span>Sarana</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item <?= $sidebar3; ?>">
+                            <a href="prasarana" class='sidebar-link'>
+                                <i class="fa-solid fa-building"></i>
+                                <span>Prasarana</span>
                             </a>
                         </li>
                         <!-- <li class="sidebar-item">
@@ -452,7 +458,7 @@
         </div>
         <?= $this->renderSection('content'); ?>
 
-        <div class="fixed-bottom">
+        <!-- <div class="fixed-bottom">
             <footer>
                 <div class="footer clearfix mb-0 text-muted">
                     <div class="float-start">
@@ -470,7 +476,7 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        </div> -->
     </div>
     </div>
     <script src="assets/js/bootstrap.js"></script>
