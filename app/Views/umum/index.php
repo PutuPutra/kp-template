@@ -202,29 +202,27 @@
         <div class="container-xxl py-1">
             <div class="container px-lg-1">
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-laptop fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">SEO Optimization</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed
-                                stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h5 class="mb-3">Sarana</h5>
+                            <p>Fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-building fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Web Design</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed
-                                stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h5 class="mb-3">Prasarana</h5>
+                            <p>Penunjang fasilitas yang terdapat di SMAN 9 Bandarlampung</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Selengkapnya</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <!-- <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-home fa-2x"></i>
@@ -267,7 +265,7 @@
                                 stet lorem.</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

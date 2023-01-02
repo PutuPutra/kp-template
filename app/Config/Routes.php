@@ -40,6 +40,9 @@ $routes->get('/kontak', 'Umum::kontak');
 $routes->get('/tentang', 'Umum::tentang');
 $routes->get('/service', 'Admin::service');
 $routes->get('/login', 'Admin::login');
+$routes->get('/register', 'Admin::register');
+$routes->get('/forgot_password', 'Admin::forgot_password');
+$routes->get('/dashboard', 'Admin::dashboard');
 
 
 //admin

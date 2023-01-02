@@ -7,6 +7,10 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <!-- jam -->
+    <link rel="stylesheet" href="assets/jamnya/css/style.css">
+    <!-- jam -->
+
 
     <!-- Libraries Stylesheet -->
     <link href="/assets/abc/lib/animate/animate.min.css" rel="stylesheet">
@@ -20,7 +24,7 @@
     <link href="/assets/abc/css/styleABC.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./assets/img/smalan.png">
+    <link rel="icon" type="image/png" href="assets/img/smalan.png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,9 +46,10 @@
 
     <!-- Template Stylesheet -->
     <link href="/assets/CSS_umum/css/styleUmum.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body onload="setInterval('displayTime()',1000);">
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -78,7 +83,7 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="<?= base_url('/') ?>" class="nav-item nav-link <?= $navbar1 ?>">Beranda</a>
                     <a href="<?= base_url('kontak') ?>" class="nav-item nav-link <?= $navbar2 ?>">Kontak</a>
-                    <a href="<?= base_url('login') ?>" class="nav-item nav-link">Login</a>
+                    <a href="<?= base_url('dashboard') ?>" class="nav-item nav-link">Admin</a>
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu border-light m-0">
@@ -117,56 +122,26 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 px-lg-5">
-                    <!-- <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div> -->
+                <div class="col-lg-3 col-md-6 px-lg-5">
                     <a href="https://smalan.sch.id/"><img class="logo" src="./assets/img/smalan.png" alt=""
-                            style="width:180px;margin-left:100px"></a>
+                            style="width:180px;margin-left:40px"></a>
                 </div>
-                <div class="col-lg-4 col-md-6 px-lg-5">
-                    <!-- <small class="ms-4">
-                        <p class="">Tanggal/Waktu: <span id="tanggalwaktu"></span></p>
-                    </small>
-                    <script>
-                    var dt = new Date();
-                    document.getElementById("tanggalwaktu").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" +
-                        (dt
-                            .getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt.getHours())
-                        .slice(-
-                            2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + ":" + (("0" + dt.getSeconds()).slice(-
-                        2));
-                    </script> -->
+                <div class="col-lg-5 col-md-6 px-lg-5">
+                    <div id="clock" class="me-5" style="margin-right:1000px;">
+                        <div>
+                            <span id="horas">00</span>
+                            <span class="time">Jam</span>
+                        </div>
+                        <div>
+                            <span id="minutos">00</span>
+                            <span class="time">Menit</span>
+                        </div>
+                        <div>
+                            <span id="segundos">00</span>
+                            <span class="time">Detik</span>
+                        </div>
+                    </div>
 
-                    <h1 style="color:white">
-                        <script type="text/javascript">
-                        window.onload = function() {
-                            jam();
-                        }
-
-                        function jam() {
-                            var a = document.getElementById('jam'),
-                                d = new Date(),
-                                h, m, s;
-                            h = d.getHours();
-                            m = set(d.getHours());
-                            s = set(d.getSeconds());
-
-                            a.innerHTML = h + ":" + m + ":" + s;
-                            setTimeout('jam()', 1000);
-                        }
-
-                        function set(a) {
-                            a = a < 10 ? '0' + a : a;
-                            return a;
-                        }
-                        </script> ssss
-                    </h1>
                 </div>
             </div>
         </div>
@@ -218,6 +193,8 @@
 
     <!-- Template Javascript -->
     <script src="/assets/abc/js/mainABC.js"></script>
+    <script src="assets/jamnya/js/script.js"></script>
+
 </body>
 
 </html>
