@@ -15,7 +15,8 @@ class Admin extends BaseController
     public function account()
     {
         return view('admin/account');
-    }public function settings()
+    }
+    public function settings()
     {
         return view('admin/settings');
     }
@@ -48,5 +49,9 @@ class Admin extends BaseController
     public function forgot_password()
     {
         return view('formLogin/authforgotpassword');
+    }
+    public function input()
+    {
+        return view('admin/input');
     }
 }

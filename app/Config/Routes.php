@@ -43,6 +43,7 @@ $routes->get('/login', 'Admin::login');
 $routes->get('/register', 'Admin::register');
 $routes->get('/forgot_password', 'Admin::forgot_password');
 $routes->get('/dashboard', 'Admin::dashboard');
+$routes->get('/input', 'Admin::input');
 $routes->get('/account', 'Admin::account', ['filter' => 'role:super_admin']);
 $routes->get('/settings', 'Admin::settings', ['filter' => 'role:super_admin']);
 
