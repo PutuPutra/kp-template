@@ -4,15 +4,6 @@ namespace App\Controllers;
 
 class Admin extends BaseController
 {
-    // public function dashboard()
-    // {
-    //     $data = [
-    //         'bg1' => 'active bg-gradient-primary',
-    //         'bg2' => null,
-    //         'namePages' => 'Dashboard',
-    //     ];
-    //     return view('admin/dashboard', $data);
-    // }
     public function service()
     {
         return view('service');
@@ -21,14 +12,14 @@ class Admin extends BaseController
     {
         return view('admin/notifications');
     }
-    public function profile()
+    public function account()
     {
-        return view('admin/profile');
+        return view('admin/account');
+    }public function settings()
+    {
+        return view('admin/settings');
     }
-    // public function login()
-    // {
-    //     return view('admin/sign_in');
-    // }
+
     public function sign_up()
     {
         return view('admin/sign_up');
@@ -53,7 +44,8 @@ class Admin extends BaseController
     public function register()
     {
         return view('formLogin/authRegister');
-    }public function forgot_password()
+    }
+    public function forgot_password()
     {
         return view('formLogin/authforgotpassword');
     }

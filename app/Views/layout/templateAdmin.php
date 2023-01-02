@@ -72,12 +72,12 @@
                                 <span>Dashboard</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
+                        <!-- <li class="sidebar-item">
                             <a href="logout" class='sidebar-link'>
                                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
                                 <span>Logout</span>
                             </a>
-                        </li>
+                        </li> -->
 
 
 
